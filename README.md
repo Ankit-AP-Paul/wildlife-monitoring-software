@@ -5,12 +5,21 @@
 ```
 cd backend
 pip install --upgrade pip
-pip install -r requirements.txt
+python -m venv venv
 .\venv\Scripts\activate
+pip install -r requirements.txt
 uvircorn main:app --reload
 ```
 
 FastAPI will start running on <http://localhost:8000>
+
+## Run desktop app
+
+```
+cd frontend
+flutter pub get
+flutter run -d windows
+```
 
 ## System Design
 
