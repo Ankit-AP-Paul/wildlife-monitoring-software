@@ -12,6 +12,7 @@ uvircorn main:app --reload
 ```
 
 FastAPI will start running on <http://localhost:8000>
+Test endpoints at <http://localhost:8000/docs>
 
 ## Run desktop app
 
@@ -28,3 +29,25 @@ flutter run -d windows
 ## Database Schema
 
 ![db schema](https://github.com/user-attachments/assets/4e909bac-90d6-4db7-b267-1f9123f6dc74)
+
+## API Reference
+
+```http
+  POST /auth/signup
+```
+
+```http
+  POST /auth/login
+```
+
+```http
+  GET /audio
+```
+
+```http
+  POST /audio
+```
+
+```http
+  DELETE /audio
+```
