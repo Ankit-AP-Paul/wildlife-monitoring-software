@@ -14,14 +14,6 @@ uvircorn main:app --reload
 FastAPI will start running on <http://localhost:8000>
 Test endpoints at <http://localhost:8000/docs>
 
-## Run desktop app
-
-```
-cd frontend
-flutter pub get
-flutter run -d windows
-```
-
 ## System Design
 
 ![architecture](https://github.com/Ankit-AP-Paul/wildlife-monitoring-software/assets/83993904/5dcfa878-dfe4-4675-8159-9f7348393301)
@@ -32,22 +24,42 @@ flutter run -d windows
 
 ## API Reference
 
-```http
+```
   POST /auth/signup
 ```
 
-```http
+```
   POST /auth/login
 ```
 
-```http
+```
   GET /audio
 ```
 
-```http
+```
   POST /audio
 ```
 
-```http
+```
   DELETE /audio
+```
+
+```
+  GET /sensor
+```
+
+```
+  POST /sensor
+```
+
+```
+  GET /region
+```
+
+```
+  GET /alert
+```
+
+```
+  POST /alert
 ```
