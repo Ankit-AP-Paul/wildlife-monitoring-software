@@ -1,18 +1,10 @@
 # Wildlife Monitoring using live audio
 
-## Run fastAPI
+## Backend
 
-```
-cd backend
-pip install --upgrade pip
-python -m venv venv
-.\venv\Scripts\activate
-pip install -r requirements.txt
-uvircorn main:app --reload
-```
+Backend deployed at <https://wildlife-monitoring-software.onrender.com>
 
-FastAPI will start running on <http://localhost:8000>
-Test endpoints at <http://localhost:8000/docs>
+Test endpoints using Swagger at <https://wildlife-monitoring-software.onrender.com/docs>
 
 ## System Design
 
