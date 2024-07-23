@@ -1,7 +1,11 @@
 from fastapi import FastAPI
 
+from routes.user import user
+
 app = FastAPI()
 
-@app.get("/")
+@app.get('/')
 def index():
-    return {"message": "FastAPI is running successfully"}
+    return {"message": "FastAPI is running"}
+
+app.include_router(user)
