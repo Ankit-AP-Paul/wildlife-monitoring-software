@@ -25,11 +25,11 @@ Test endpoints at <http://localhost:8000/docs>
 ## API Reference
 
 ```
-  POST /auth/signup
+  POST /user
 ```
 
 ```
-  POST /auth/login
+  GET /user
 ```
 
 ```
