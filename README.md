@@ -16,12 +16,16 @@ Test endpoints using Swagger at <https://wildlife-monitoring-software.onrender.c
 
 ## API Reference
 
-```
-  POST /user
-```
+User Signup
 
 ```
-  GET /user
+  POST /signup
+```
+
+User Login
+
+```
+  POST /signin
 ```
 
 ```
