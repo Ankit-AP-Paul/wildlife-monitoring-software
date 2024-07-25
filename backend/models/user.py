@@ -8,5 +8,6 @@ class User(BaseModel):
     password : str
     phone_no : int
     gov_body : str
+    region_id : str
     created_at : datetime = datetime.now()
     
