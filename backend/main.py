@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from routes.user import user
+from routes.region import region
 
 app = FastAPI()
 
@@ -18,3 +19,4 @@ def index():
     return {"message": "FastAPI is running"}
 
 app.include_router(user)
+app.include_router(region)
