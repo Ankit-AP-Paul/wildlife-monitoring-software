@@ -28,7 +28,7 @@ User Login
   POST /signin
 ```
 
-Create Region
+Add Region
 
 ```
 POST /region
@@ -44,4 +44,22 @@ Get region by id
 
 ```
 GET /region/{id}
+```
+
+Add Sensor
+
+```
+POST /sensor
+```
+
+Get all sensors
+
+```
+GET /all_sensor
+```
+
+Get sensor by id
+
+```
+GET /sensor/{id}
 ```

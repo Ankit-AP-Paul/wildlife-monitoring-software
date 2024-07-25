@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from routes.user import user
 from routes.region import region
+from routes.sensor import sensor
 
 app = FastAPI()
 
@@ -20,3 +21,4 @@ def index():
 
 app.include_router(user)
 app.include_router(region)
+app.include_router(sensor)
