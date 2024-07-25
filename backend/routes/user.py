@@ -1,11 +1,10 @@
 from fastapi import APIRouter, HTTPException
-from bson.objectid import ObjectId
+from bson import ObjectId
 import hashlib
 
 from models.user import User
 from config.db import conn
 from schemas.user import usersEntity
-from schemas.region import regionsEntity
 
 
 user = APIRouter()

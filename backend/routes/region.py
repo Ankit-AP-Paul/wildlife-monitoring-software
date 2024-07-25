@@ -1,5 +1,5 @@
 from fastapi import APIRouter, HTTPException
-from bson.objectid import ObjectId
+from bson import ObjectId
 
 from models.region import Region
 from schemas.region import regionsEntity, regionEntity
@@ -18,7 +18,7 @@ async def get_all_regions():
     return regionsEntity(regions)
 
 @region.get('/region/{id}')
-async def get_region_by_id(id):
+async def get_region_by_id(id : str):
     id = ObjectId(id)
     region = conn.technoverse.region.find_one({"_id": id})
     if not region:
