@@ -5,7 +5,9 @@ from models.sensor import Sensor
 from schemas.sensor import sensorsEntity, sensorEntity
 from config.db import conn
 
-sensor = APIRouter()
+sensor = APIRouter(
+    tags=["sensor"]
+)
 
 @sensor.post('/sensor')
 async def create_sensor(sensor: Sensor):

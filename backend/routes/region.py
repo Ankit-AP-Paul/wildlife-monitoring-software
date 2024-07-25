@@ -5,7 +5,9 @@ from models.region import Region
 from schemas.region import regionsEntity, regionEntity
 from config.db import conn
 
-region = APIRouter()
+region = APIRouter(
+    tags=["region"]
+)
 
 @region.post('/region')
 async def create_region(region: Region):

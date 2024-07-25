@@ -7,7 +7,9 @@ from config.db import conn
 from schemas.user import usersEntity
 
 
-user = APIRouter()
+user = APIRouter(
+    tags=["user"]
+)
 
 @user.post('/signup')
 async def user_signup(user: User):

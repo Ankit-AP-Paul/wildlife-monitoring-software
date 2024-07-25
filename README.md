@@ -63,3 +63,21 @@ Get sensor by id
 ```
 GET /sensor/{id}
 ```
+
+Create alert
+
+```
+POST /alert
+```
+
+Get all alerts
+
+```
+GET /all_alerts
+```
+
+Get alert by sensor id
+
+```
+GET /alert/{id}
+```
