@@ -28,34 +28,20 @@ User Login
   POST /signin
 ```
 
-```
-  GET /audio
-```
+Create Region
 
 ```
-  POST /audio
+POST /region
 ```
 
-```
-  DELETE /audio
-```
+All regions
 
 ```
-  GET /sensor
+GET /all_region
 ```
 
-```
-  POST /sensor
-```
+Get region by id
 
 ```
-  GET /region
-```
-
-```
-  GET /alert
-```
-
-```
-  POST /alert
+GET /region/{id}
 ```
