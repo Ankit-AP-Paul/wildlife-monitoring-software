@@ -5,6 +5,7 @@ from routes.user import user
 from routes.region import region
 from routes.sensor import sensor
 from routes.alert import alert
+from routes.audio import audio
 
 app = FastAPI()
 
@@ -24,3 +25,4 @@ app.include_router(user)
 app.include_router(region)
 app.include_router(sensor)
 app.include_router(alert)
+app.include_router(audio)
